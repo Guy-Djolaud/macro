@@ -1,4 +1,4 @@
-# Guy Arnold Djolaud – macroeconomics profile
+# Guy-Arnold Djolaud – macroeconomics profile
 
 Source of <https://guy-djolaud.github.io/macro/>: a single static page (`index.html`, no build step).
 
