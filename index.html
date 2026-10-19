@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guy Arnold Djolaud · Macroeconomist</title>
+  <meta name="description" content="Guy Arnold Djolaud, macroeconomist: monetary policy and inflation, fiscal policy and debt sustainability, labour macroeconomics. PhD candidate, McGill University; researcher, CIREQ.">
+  <meta property="og:title" content="Guy Arnold Djolaud · Macroeconomist">
+  <meta property="og:description" content="Monetary policy, fiscal policy and labour macroeconomics.">
+  <meta property="og:image" content="https://guy-djolaud.github.io/macro/images/profile.jpg">
+  <meta property="og:url" content="https://guy-djolaud.github.io/macro/">
+  <link rel="canonical" href="https://guy-djolaud.github.io/macro/">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --surface: #ffffff;
+      --text: #1d2430;
+      --muted: #5b6575;
+      --line: #e3e0d8;
+      --accent: #12406b;
+      --accent-soft: #e8eef5;
+      --tag: #7a5a1e;
+      --tag-bg: #f6efe0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #12161d;
+        --surface: #1a2029;
+        --text: #e6e9ee;
+        --muted: #a2abb9;
+        --line: #2c3442;
+        --accent: #8db8e6;
+        --accent-soft: #1f2a38;
+        --tag: #e2c27e;
+        --tag-bg: #2e2818;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; line-height: 1.25; margin: 0; }
+
+    .wrap { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+    nav.top {
+      position: sticky; top: 0; z-index: 10;
+      background: color-mix(in srgb, var(--bg) 88%, transparent);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; gap: 16px; }
+    nav.top .brand { font-family: "Source Serif 4", Georgia, serif; font-weight: 700; color: var(--text); text-decoration: none; white-space: nowrap; }
+    nav.top ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
+    nav.top ul a { color: var(--muted); text-decoration: none; }
+    nav.top ul a:hover { color: var(--accent); }
+
+    header.hero { padding: 56px 0 40px; }
+    .hero-grid { display: grid; grid-template-columns: 180px 1fr; gap: 36px; align-items: center; }
+    .hero-grid img {
+      width: 180px; height: 180px; border-radius: 50%;
+      object-fit: cover; object-position: center top;
+      border: 4px solid var(--surface); box-shadow: 0 2px 14px rgba(0,0,0,.12);
+    }
+    .hero h1 { font-size: 40px; }
+    .hero .role { font-size: 19px; color: var(--accent); margin: 6px 0 12px; font-weight: 500; }
+    .hero .affil { color: var(--muted); margin: 0 0 18px; }
+    .btns { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 16px; border-radius: 6px; font-size: 15px; font-weight: 500;
+      border: 1px solid var(--accent); text-decoration: none;
+    }
+    .btn.primary { background: var(--accent); color: var(--bg); }
+    .btn.ghost { color: var(--accent); }
+
+    section { padding: 36px 0; border-top: 1px solid var(--line); }
+    section > h2 { font-size: 28px; margin-bottom: 20px; }
+    .lead { font-size: 17px; margin: 0; }
+
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
+    .card h3 { font-size: 19px; margin-bottom: 8px; color: var(--accent); }
+    .card p { margin: 0; color: var(--muted); font-size: 15px; }
+
+    h3.group { font-family: Inter, system-ui, sans-serif; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 28px 0 12px; font-weight: 600; }
+    h3.group:first-of-type { margin-top: 0; }
+    .paper { padding: 16px 0; border-bottom: 1px solid var(--line); }
+    .paper:last-child { border-bottom: 0; }
+    .paper .title { font-family: "Source Serif 4", Georgia, serif; font-size: 19px; font-weight: 600; }
+    .paper .meta { color: var(--muted); font-size: 14.5px; margin-top: 4px; }
+    .tag { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 4px; background: var(--tag-bg); color: var(--tag); margin-right: 6px; vertical-align: 2px; }
+    .paper .links { margin-top: 6px; font-size: 14.5px; display: flex; gap: 16px; flex-wrap: wrap; }
+    details { margin-top: 8px; }
+    details summary { cursor: pointer; color: var(--accent); font-size: 14.5px; }
+    details p { margin: 8px 0 0; font-size: 15px; color: var(--text); }
+
+    .exp { display: grid; grid-template-columns: 170px 1fr; gap: 6px 24px; padding: 12px 0; }
+    .exp .when { color: var(--muted); font-size: 14.5px; }
+    .exp .what strong { display: block; }
+    .exp .what span { color: var(--muted); font-size: 15px; }
+
+    footer { border-top: 1px solid var(--line); padding: 28px 0 48px; color: var(--muted); font-size: 14.5px; }
+    footer .row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+
+    @media (max-width: 720px) {
+      nav.top ul { gap: 14px; font-size: 14px; }
+      nav.top ul li.opt { display: none; }
+      .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 20px; }
+      .hero-grid img { margin: 0 auto; width: 150px; height: 150px; }
+      .hero h1 { font-size: 32px; }
+      .btns { justify-content: center; }
+      .cards { grid-template-columns: 1fr; }
+      .exp { grid-template-columns: 1fr; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <a class="brand" href="#">G. A. Djolaud</a>
+    <ul>
+      <li><a href="#research">Research</a></li>
+      <li class="opt"><a href="#policy">Policy work</a></li>
+      <li class="opt"><a href="#experience">Experience</a></li>
+      <li><a href="files/CV_Guy_Djolaud_Macro.pdf">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <img src="images/profile.jpg" alt="Guy Arnold Djolaud" width="180" height="180">
+    <div>
+      <h1>Guy Arnold Djolaud</h1>
+      <p class="role">Macroeconomist · Monetary, Fiscal &amp; Labour Macroeconomics</p>
+      <p class="affil">PhD Candidate in Economics, McGill University (thesis submitted May 2026) · Researcher, CIREQ · Montreal</p>
+      <div class="btns">
+        <a class="btn primary" href="files/CV_Guy_Djolaud_Macro.pdf">Download CV</a>
+        <a class="btn ghost" href="mailto:kili.djolaud@mail.mcgill.ca">kili.djolaud@mail.mcgill.ca</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="lead">
+      I study how macroeconomic shocks propagate through the Canadian economy and how monetary and fiscal policy should respond.
+      My work combines Bayesian state-space models, time-series and panel econometrics, and large-scale confidential
+      Statistics Canada microdata with structural macroeconomic models (DSGE, TANK) to analyse potential output, inflation
+      and the Phillips curve, labour-market dynamics, and debt sustainability. I am fully bilingual in French and English.
+    </p>
+  </section>
+
+  <section id="expertise">
+    <h2>Areas of expertise</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Monetary policy</h3>
+        <p>Inflation dynamics and the Phillips curve; NAIRU and potential output; state-space models; optimal policy under external shocks.</p>
+      </div>
+      <div class="card">
+        <h3>Fiscal policy</h3>
+        <p>Debt sustainability, sovereign debt and reserve pooling, structural macro-fiscal modelling (DSGE, TANK).</p>
+      </div>
+      <div class="card">
+        <h3>Labour macroeconomics</h3>
+        <p>Unemployment, wage setting and labour market power over the business cycle, using administrative microdata.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+
+    <h3 class="group">Submitted</h3>
+    <div class="paper">
+      <div class="title">Phillips Curve Flattening Mechanically Weakens NAIRU Identification</div>
+      <details>
+        <summary>Abstract</summary>
+        <p>In the standard random-walk state-space model, the likelihood information about an interior NAIRU state relative to the
+        smoothness precision supplied by the state equation is proportional to the squared Phillips curve slope. Canadian quarterly
+        data from 1977 to 2026 show the mechanism is quantitatively severe: across the February 1991 inflation-targeting break this
+        ratio falls by a factor of twenty-three, driven almost entirely by the slope. The credible interval for the unemployment gap
+        then contains zero in 97 per cent of quarters, against 73 per cent before, and without a sign restriction the posterior
+        probability of a negative slope falls from 0.99 to 0.78.</p>
+      </details>
+    </div>
+
+    <h3 class="group">Working papers</h3>
+    <div class="paper">
+      <div class="title">The Insurance Value of a Monetary Union: Sovereign Debt and Reserve Pooling</div>
+    </div>
+    <div class="paper">
+      <div class="title">When Trade and Oil Shocks Collide: Optimal Monetary Policy with Collateral Constraints</div>
+    </div>
+    <div class="paper">
+      <div class="title">Labour Market Power in Canada: Long-Term Trends and Cyclical Dynamics</div>
+      <div class="meta"><span class="tag">Job market paper</span></div>
+      <div class="links"><a href="https://guy-djolaud.github.io/publications/labour-market-power-canada">Paper</a><a href="https://guy-djolaud.github.io/files/CEA_Slides.pdf">Slides</a></div>
+      <details>
+        <summary>Abstract</summary>
+        <p>The first time-series analysis of labour market concentration in Canada. National concentration declined gradually from
+        2001 to 2019, while local concentration rose by 14% during the Great Recession, 68% of which was driven by sectoral
+        reallocation toward more concentrated industries. A calibrated TANK model with employer market power shows that fiscal
+        expansions compress wage markdowns, raise the labour share, and markedly reduce consumption and income inequality between
+        workers and capitalists.</p>
+      </details>
+    </div>
+    <div class="paper">
+      <div class="title">Immigration, Labour Dynamics, and Fiscal Sustainability</div>
+      <div class="meta">with <a href="https://blogs.worldbank.org/en/team/f/fatim-lahonri-diabagate">Fatim Diabagate</a></div>
+      <div class="links"><a href="https://drive.google.com/file/d/1pnE09pxC2mCpg9R7FRfHV8mO9_j3sJbp/view">Paper</a></div>
+      <details>
+        <summary>Abstract</summary>
+        <p>We examine the implications of fiscal policy for debt sustainability following an immigration shock. Using a DSGE model
+        with life cycle, death risk, skills and labour efficiency, calibrated to Canada, we simulate the equilibrium effect of
+        immigration on sustainable debt and show that the complementarity of immigrants' skills and their age profile have the
+        largest impact on debt sustainability.</p>
+      </details>
+    </div>
+
+    <h3 class="group">Pre-doctoral</h3>
+    <div class="paper">
+      <div class="title">Estimating the Non-Accelerating Inflation Rate of Unemployment (NAIRU)</div>
+      <div class="meta">M.Sc. thesis, Université de Montréal, 2017 · Bayesian estimation of a state-space model with Kalman filtering and Gibbs sampling</div>
+      <div class="links"><a href="https://guy-djolaud.github.io/files/Djolaud_Guy_Arnold_2017_memoire.pdf">PDF</a></div>
+    </div>
+  </section>
+
+  <section id="policy">
+    <h2>Policy work</h2>
+    <div class="paper">
+      <div class="title">Country Climate and Development Report – Côte d’Ivoire</div>
+      <div class="meta">World Bank Group, 2023 · co-authored pages 209–216</div>
+      <p style="margin:6px 0 0;font-size:15px">Climate finance diagnostics, macro-fiscal policy modelling and green growth scenario analysis.</p>
+      <div class="links"><a href="https://documents1.worldbank.org/curated/en/099112223090537113/pdf/P17953304fb0f70f10a64e0ec2e678e931f.pdf">Report (PDF)</a></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="exp">
+      <div class="when">2018 – present</div>
+      <div class="what"><strong>Researcher, CIREQ – McGill University</strong>
+        <span>Bayesian state-space estimation of latent macroeconomic states, structural modelling of fiscal policy, and analysis of Canadian labour-market dynamics on confidential Statistics Canada microdata (RDC/CIQSS).</span></div>
+    </div>
+    <div class="exp">
+      <div class="when">Feb 2023 – Jun 2024</div>
+      <div class="what"><strong>Climate Economics Consultant, World Bank Group</strong>
+        <span>Country Climate and Development Reports: climate finance diagnostics and macro-fiscal modelling.</span></div>
+    </div>
+    <div class="exp">
+      <div class="when">2018 – 2020</div>
+      <div class="what"><strong>Teaching Assistant, Macroeconomic Policy – McGill University</strong></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap row">
+    <span>© Guy Arnold Djolaud · Montreal, Canada</span>
+    <span><a href="mailto:kili.djolaud@mail.mcgill.ca">Email</a> · <a href="https://github.com/Guy-Djolaud">GitHub</a> · <a href="https://guy-djolaud.github.io/">Academic website</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
